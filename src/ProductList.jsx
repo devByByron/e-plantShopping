@@ -250,13 +250,13 @@ function ProductList({ onHomeClick }) {
     };
     const handlePlantsClick = (e) => {
         e.preventDefault();
-        setShowPlants(true); // Set showAboutUs to true when "About Us" link is clicked
-        setShowCart(false); // Hide the cart when navigating to About Us
+        setShowPlants(false); // Reset showPlants state
+        setShowCart(false); // Show the plants page by hiding the cart
     };
 
     const handleContinueShopping = (e) => {
         e.preventDefault();
-        setShowCart(false);
+        setShowCart(false); // Hide cart and show plants page
     };
 
     const handleAddToCart = (plant) => {
